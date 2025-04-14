@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Binary Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Binary Converter</h1>
+        
+        <div class="input-group">
+            <label for="inputText">Enter Text</label>
+            <textarea id="inputText" rows="5" placeholder="Type or paste your text here..."></textarea>
+        </div>
+        
+        <div class="button-group">
+            <button id="convertBtn">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                Convert to Binary
+            </button>
+            <button id="clearBtn" class="secondary">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                </svg>
+                Clear
+            </button>
+            <button id="copyBtn" class="secondary">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                Copy Result
+            </button>
+        </div>
+        
+        <div class="output-group">
+            <label for="output">Binary Output</label>
+            <div id="output" class="output"></div>
+        </div>
+        
+        <div class="footer">
+            <p>Each character is converted to its ASCII value and then to an 8-bit binary representation.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
